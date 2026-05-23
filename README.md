@@ -81,7 +81,7 @@ Dish-Genie/
 ## 📸 Application Preview
 
 ### 🏠 Landing Page
-(Add screenshot here)
+<img width="1675" height="968" alt="image" src="https://github.com/user-attachments/assets/6d393e90-9a22-4c87-8553-cbbe96bb716f" />
 
 ### 🍳 Recipe Generator
 (Add screenshot here)
