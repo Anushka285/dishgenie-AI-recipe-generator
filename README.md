@@ -84,10 +84,10 @@ Dish-Genie/
 <img width="1675" height="968" alt="image" src="https://github.com/user-attachments/assets/6d393e90-9a22-4c87-8553-cbbe96bb716f" />
 
 ### 🍳 Recipe Generator
-(Add screenshot here)
+<img width="1791" height="965" alt="image" src="https://github.com/user-attachments/assets/3f2a17ce-70bc-4c25-b295-6c35c2f98984" />
 
 ### ✨ Generated Recipe
-(Add screenshot here)
+<img width="1809" height="965" alt="image" src="https://github.com/user-attachments/assets/83585b0f-5466-4cb0-9420-d4532f0d36c5" />
 
 ---
 
