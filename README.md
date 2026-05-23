@@ -1,22 +1,58 @@
 # 🍽️ Dish Genie
 
-**Dish Genie** is a Python Flask-based web application that helps users find delicious recipes across Indian, Italian, and Mexican cuisines. With a clean interface, downloadable PDFs, and stylish visuals, it's your personal kitchen assistant!
+🚀 AI-Powered Recipe Generator using Flask + OpenRouter GPT
 
-Try out the app on: https://recipe-genie-zqak.onrender.com
+**Dish Genie** is an AI-powered recipe generation web application built with Flask and OpenRouter GPT models that transforms simple ingredients into personalized cuisine-based recipes in seconds.
+
+🔗 Live Demo: https://recipe-genie-zqak.onrender.com
+
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Flask](https://img.shields.io/badge/Flask-WebApp-black)
+![OpenRouter](https://img.shields.io/badge/OpenRouter-GPT-orange)
+![Render](https://img.shields.io/badge/Deployment-Render-purple)
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- 🔍 Search or select cuisines to get tailored recipes
-- 📄 Download recipe PDFs
-- 🖼️ Styled with custom images and HTML templates
-- ⚙️ Easily deployable to platforms like Render
+- 🤖 AI-powered recipe generation from custom ingredients
+- 🍝 Cuisine-specific recipe personalization
+- 📄 Dynamic prompt engineering using PDF recipe context
+- 🎨 Interactive Flask-based web interface
+- 🪄 Animated genie-themed loading experience
+- 🌐 Cloud deployment using Render
+- 🔁 Regenerate recipes instantly
+- 📱 Clean and responsive user experience
+
+---
+
+## 🛠️ Tech Stack
+
+- Python
+- Flask
+- HTML5
+- CSS3
+- OpenRouter API
+- GPT-4o-mini
+- PyPDF2
+- Render
+- Jinja2 Templates
+
+---
+
+## 🤖 How It Works
+
+1. User enters ingredients and selects cuisine + difficulty.
+2. Flask backend processes the request.
+3. Recipe PDFs are parsed and used as contextual inspiration.
+4. Prompt is sent to GPT-4o-mini through OpenRouter API.
+5. AI generates a unique recipe in real time.
+6. Result is displayed through an interactive UI.
 
 ---
 
 ## 📁 Project Structure
 
-```
+```bash
 Dish-Genie/
 │
 ├── static/                  # Static assets
@@ -35,90 +71,133 @@ Dish-Genie/
 │
 ├── app.py                   # Main Flask application
 ├── requirements.txt         # Python dependencies
-├── .env                     # Environment variables (not tracked in Git)
+├── .gitignore                 
 ├── .gitattributes
+├── README.md
 ```
 
 ---
 
-## ⚙️ Getting Started
+## 📸 Application Preview
 
-### 1. Clone the Repository
+### 🏠 Landing Page
+(Add screenshot here)
+
+### 🍳 Recipe Generator
+(Add screenshot here)
+
+### ✨ Generated Recipe
+(Add screenshot here)
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/dish-genie.git
-cd dish-genie
+git clone https://github.com/your-username/dishgenie-AI-recipe-generator.git
+cd dishgenie-AI-recipe-generator
 ```
 
-### 2. Create a Virtual Environment (optional)
+---
+
+### 2️⃣ Create Virtual Environment (Optional)
 
 ```bash
 python -m venv venv
-source venv/bin/activate       # macOS/Linux
-venv\Scripts\activate          # Windows
 ```
 
-### 3. Install Dependencies
+#### Activate Environment
+
+##### Windows
+```bash
+venv\Scripts\activate
+```
+
+##### macOS/Linux
+```bash
+source venv/bin/activate
+```
+
+---
+
+### 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run the Flask App
+---
+
+### 4️⃣ Add Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+OPENAI_API_KEY=your_openrouter_api_key
+```
+
+---
+
+### 5️⃣ Run the Application
 
 ```bash
 python app.py
 ```
 
-Then open your browser and go to:  
-`http://localhost:5000`
+Visit:
+
+```bash
+http://localhost:5000
+```
 
 ---
 
 ## 🌐 Deployment on Render
 
-1. Push your project to GitHub
-2. Go to [https://render.com](https://render.com)
-3. Click "New" → "Web Service"
-4. Connect your GitHub repo
-5. Fill in:
-   - **Start Command**: `gunicorn app:app`
-   - **Runtime**: Python 3
-   - Add environment variables from your `.env` file (if needed)
-6. Click **Create Web Service**
+### Steps
 
-Render will automatically build and deploy your Flask app!
+1. Push project to GitHub
+2. Go to https://render.com
+3. Click **New → Web Service**
+4. Connect your GitHub repository
+5. Configure:
 
----
+```bash
+Runtime: Python 3
+Build Command: pip install -r requirements.txt
+Start Command: gunicorn app:app
+```
 
-## 📸 Screenshots
-
-> *(Add screenshots here when available)*
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License** — feel free to use, share, and modify.
+6. Add environment variables
+7. Deploy 🚀
 
 ---
 
-## 🙌 Acknowledgements
+## 🧠 AI Workflow
 
-- [Flask](https://flask.palletsprojects.com/) – Web framework
-- [Render](https://render.com) – Easy cloud hosting
-- You – for trying Dish Genie! ❤️
+Dish Genie uses:
+- Prompt engineering
+- Context injection using recipe PDFs
+- GPT-4o-mini via OpenRouter API
+- Session-based recipe regeneration
+- Dynamic cuisine customization
 
----
-
-## 🧠 Future Improvements
-
-- User accounts and recipe saving
-- More cuisines and meal types
-- AI-powered recipe generation from ingredients
+The application combines static culinary knowledge with real-time AI generation to create unique recipes for users.
 
 ---
 
-Enjoy cooking with **Dish Genie**! 🍳✨
+## 🚀 Future Enhancements
 
+- Ingredient image recognition
+- Voice-based cooking assistant
+- User authentication and saved recipes
+- Nutrition and calorie analysis
+- Personalized meal planning
+- Multi-language recipe generation
+- Recipe rating and recommendation system
 
+---
+
+Enjoy cooking with **Dish Genie** 🍳✨
